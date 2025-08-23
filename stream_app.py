@@ -7,7 +7,7 @@ from numpy import log, sqrt, exp  # Make sure to import these
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#######################
+
 # Page configuration
 st.set_page_config(
     page_title="Black-Scholes Option Pricing Model",
@@ -238,3 +238,4 @@ with col2:
     st.subheader("Put Price Heatmap")
     _, heatmap_fig_put = plot_heatmap(bs_model, spot_range, vol_range, strike)
     st.pyplot(heatmap_fig_put)
+
