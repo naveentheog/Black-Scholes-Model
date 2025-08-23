@@ -116,8 +116,7 @@ class BlackScholes:
 
         return call_price, put_price
 
-# Function to generate heatmaps
-# ... your existing imports and BlackScholes class definition ...
+
 
 
 # Sidebar for User Inputs
@@ -238,4 +237,5 @@ with col2:
     st.subheader("Put Price Heatmap")
     _, heatmap_fig_put = plot_heatmap(bs_model, spot_range, vol_range, strike)
     st.pyplot(heatmap_fig_put)
+
 
